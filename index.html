@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cal+Sans&family=Noto+Sans+JP:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f5f1fe;
+      }
+      h1 {
+        text-align: left;
+        font-size: 40px;
+        color: #111f4d;
+        margin: 0;
+        padding: 10px;
+      }
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-size: 25px;
+        padding: 10px;
+        color: #c4bbf0;
+        transition: all ease-in-out 150ms;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      header {
+        background-color: #ffffff;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #f5f1fe;
+        border: 1px solid #111f4d;
+        background-color: #111f4d;
+        transition: all ease-in-out 150ms;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #111f4d;
+        background-color: #ffffff;
+      }
+      #profile-image {
+        width: 500px;
+        margin: 20px 20px 20px 30px;
+        transition: all ease-in-out 150ms;
+      }
+      #profile-image:hover {
+        filter: brightness(110%) contrast(110%)
+          drop-shadow(0 0 10px rgba(17, 31, 77, 0.3));
+        transform: scale(1.01); /* Optional: slight zoom */
+      }
+      .quote {
+        font-size: 45px;
+        font-family: "Abril Fatface", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: #ffffff;
+        margin: 100px;
+
+        padding: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .quote {
+        animation: fadeIn 1.5s ease-out;
+      }
+      section {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(
+          68.3deg,
+          rgb(23, 41, 77) 6.3%,
+          rgb(243, 113, 154) 90.9%
+        );
+        background-size: cover;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tsion Taye</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        <button>Hire Me</button>
+      </nav>
+    </header>
+    <section>
+      <img src="profile.png" alt="profile image" id="profile-image" />
+      <p class="quote">
+        You never know how strong you are<br />
+        until being strong is<br />
+        the only option you have left.
+      </p>
+    </section>
+  </body>
+</html>
