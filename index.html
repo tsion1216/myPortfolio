@@ -13,7 +13,7 @@
     <style>
       body {
         margin: 0;
-        background-color: #f5f1fe;
+        background-color: #fcf9f9;
       }
       h1 {
         text-align: left;
@@ -105,13 +105,55 @@
         max-width: 100%;
       }
       .introduction {
-        border: 1px solid #111f4d;
-        padding: 10px;
+        border: 5px solid #ffffff;
+        padding: 19px;
         text-align: center;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin: 10px 450px;
+        border-radius: 20px;
+        width: 130px;
+        height: 130px;
+        display: flex; /* Add flexbox */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        position: relative;
+        font-size: 29px;
+        font-family: "Lobster", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #ffffff;
+        background-image: url(https://leadschool.in/wp-content/uploads/2022/04/shutterstock_1777292972.jpg);
+        background-size: cover;
+      }
+      .introduction p {
+        margin: 0 auto;
+      }
+      .intro-grid {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      #top {
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+        color: #352961;
+      }
+      #middle {
+        margin-left: -20px;
+        margin-top: 120px;
+        background-size: cover;
+        background-image: url("https://leadschool.in/wp-content/uploads/2022/04/shutterstock_1777292972.jpg");
+      }
+      #last {
+        margin-top: 213px;
+        margin-left: -20px;
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+        color: #352961;
       }
     </style>
   </head>
@@ -134,8 +176,10 @@
         the only option you have left.
       </p>
     </section>
-    <p class="introduction">I'm Tsion Taye</p>
-    <p class="introduction">a software engineering student</p>
-    <p class="introduction">Welcome</p>
+    <div class="intro-grid">
+      <p class="introduction" id="top">I'm Tsion Taye</p>
+      <p class="introduction" id="middle">a software engineering student</p>
+      <p class="introduction" id="last">Welcome!</p>
+    </div>
   </body>
 </html>
