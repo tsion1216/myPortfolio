@@ -20,27 +20,27 @@
         --white: #ffffff;
         --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       }
-      
+
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
-      
+
       html {
         scroll-padding-top: 80px;
         scroll-behavior: smooth;
       }
-      
+
       body {
         margin: 0;
         background-color: var(--light-bg);
-        font-family: 'Public Sans', sans-serif;
+        font-family: "Public Sans", sans-serif;
         color: var(--text-color);
         line-height: 1.6;
         overflow-x: hidden;
       }
-      
+
       h1 {
         text-align: left;
         font-size: clamp(24px, 5vw, 40px);
@@ -48,13 +48,13 @@
         margin: 0;
         padding: 10px;
       }
-      
+
       nav {
         margin-top: 15px;
         display: flex;
         align-items: center;
       }
-      
+
       nav a {
         text-decoration: none;
         font-size: clamp(16px, 2.5vw, 25px);
@@ -63,11 +63,11 @@
         transition: all ease-in-out 150ms;
         white-space: nowrap;
       }
-      
+
       nav a:hover {
         text-decoration: underline;
       }
-      
+
       header {
         background-color: var(--white);
         margin: 0;
@@ -81,7 +81,7 @@
         z-index: 1000;
         box-shadow: var(--shadow);
       }
-      
+
       button {
         font-size: clamp(14px, 2vw, 16px);
         padding: 8px 16px;
@@ -94,25 +94,25 @@
         white-space: nowrap;
         margin-left: 10px;
       }
-      
+
       button:hover {
         color: var(--primary-color);
         background-color: var(--white);
       }
-      
+
       #profile-image {
         width: 100%;
         max-width: 500px;
         margin: 20px auto;
         transition: all ease-in-out 150ms;
       }
-      
+
       #profile-image:hover {
         filter: brightness(110%) contrast(110%)
           drop-shadow(0 0 10px rgba(17, 31, 77, 0.3));
         transform: scale(1.01);
       }
-      
+
       .quote {
         font-size: clamp(24px, 5vw, 45px);
         font-family: "Abril Fatface", serif;
@@ -124,7 +124,7 @@
         padding: 20px;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
       }
-      
+
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -135,11 +135,11 @@
           transform: translateY(0);
         }
       }
-      
+
       .quote {
         animation: fadeIn 1.5s ease-out;
       }
-      
+
       section {
         display: flex;
         flex-direction: column;
@@ -154,7 +154,7 @@
         margin-top: 80px;
         padding: 20px;
       }
-      
+
       .introduction {
         border: 5px solid var(--white);
         padding: 15px;
@@ -175,11 +175,11 @@
         background-size: cover;
         margin: 10px auto;
       }
-      
+
       .introduction p {
         margin: 0 auto;
       }
-      
+
       .intro-grid {
         display: flex;
         flex-direction: column;
@@ -188,7 +188,7 @@
         margin-top: 30px;
         width: 100%;
       }
-      
+
       #top {
         background: linear-gradient(
           68.6deg,
@@ -197,13 +197,13 @@
         );
         color: #352961;
       }
-      
+
       #middle {
         color: var(--white);
         background-size: cover;
         background-image: url("https://leadschool.in/wp-content/uploads/2022/04/shutterstock_1777292972.jpg");
       }
-      
+
       #last {
         background: linear-gradient(
           68.6deg,
@@ -212,7 +212,7 @@
         );
         color: #352961;
       }
-      
+
       .About-me {
         text-align: center;
         max-width: 800px;
@@ -223,17 +223,17 @@
         background-color: var(--white);
         box-shadow: var(--shadow);
       }
-      
+
       .part-one h2 {
         font-size: clamp(24px, 5vw, 35px);
         color: var(--secondary-color);
         margin-bottom: 15px;
       }
-      
+
       .part-one p {
         font-size: clamp(16px, 3vw, 27px);
       }
-      
+
       .about-card {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
@@ -243,12 +243,12 @@
         cursor: pointer;
         margin: 10px;
       }
-      
+
       .about-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       }
-      
+
       .about-card h3 {
         margin-top: 0;
         color: var(--secondary-color);
@@ -256,32 +256,32 @@
         padding-bottom: 5px;
         font-size: clamp(20px, 4vw, 30px);
       }
-      
+
       .about-card ul {
         list-style-type: none;
         padding: 0;
       }
-      
+
       .about-card li,
       .about-card p {
         font-size: clamp(16px, 3vw, 23px);
         margin-bottom: 10px;
       }
-      
+
       .about-card p {
         line-height: 1.6;
       }
-      
+
       .about-card ul li {
         margin-bottom: 10px;
         cursor: pointer;
         transition: color 0.3s;
       }
-      
+
       .about-card ul li:hover {
         color: var(--secondary-color);
       }
-      
+
       .about-content {
         display: flex;
         flex-direction: column;
@@ -290,13 +290,13 @@
         max-width: 800px;
         padding: 0 20px;
       }
-      
+
       img {
         width: 100%;
         border-radius: 20px;
         height: auto;
       }
-      
+
       .img-grid {
         display: grid;
         width: 100%;
@@ -304,24 +304,24 @@
         gap: 10px;
         padding: 0 10px;
       }
-      
+
       .grid-content h3 {
         text-align: center;
         color: var(--primary-color);
         font-size: clamp(24px, 5vw, 36px);
         margin-bottom: 20px;
       }
-      
+
       .img-grid img {
         transition: all ease-in-out 200ms;
         border: 3px solid var(--white);
       }
-      
+
       .img-grid img:hover {
         transform: translateY(-5px);
         cursor: pointer;
       }
-      
+
       .grid-content {
         background: linear-gradient(
           76.5deg,
@@ -333,13 +333,13 @@
         padding: 30px 15px;
         margin: 20px 0;
       }
-      
+
       .projects-section {
         max-width: 1200px;
         margin: 50px auto;
         padding: 20px;
       }
-      
+
       .projects-section h2 {
         text-align: center;
         color: var(--primary-color);
@@ -347,7 +347,7 @@
         margin-bottom: 30px;
         position: relative;
       }
-      
+
       .projects-section h2::after {
         content: "";
         display: block;
@@ -357,14 +357,14 @@
         margin: 15px auto;
         border-radius: 2px;
       }
-      
+
       .projects-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
         padding: 10px;
       }
-      
+
       .project-card {
         background: var(--white);
         border-radius: 15px;
@@ -372,41 +372,41 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-      
+
       .project-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       }
-      
+
       .project-image {
         width: 100%;
         height: 200px;
         object-fit: cover;
       }
-      
+
       .project-content {
         padding: 15px;
       }
-      
+
       .project-content h3 {
         color: var(--primary-color);
         margin-top: 0;
         font-size: clamp(18px, 3vw, 24px);
       }
-      
+
       .project-content p {
         color: #555;
         font-size: clamp(14px, 2vw, 16px);
         line-height: 1.6;
       }
-      
+
       .project-tech {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
         margin: 15px 0;
       }
-      
+
       .tech-tag {
         background: #e0d6ff;
         color: var(--secondary-color);
@@ -415,11 +415,11 @@
         font-size: clamp(12px, 2vw, 14px);
         font-weight: 500;
       }
-      
+
       .project-links {
         margin-top: 15px;
       }
-      
+
       .demo-link {
         display: inline-block;
         padding: 6px 15px;
@@ -431,11 +431,11 @@
         transition: all 0.3s ease;
         font-size: clamp(12px, 2vw, 16px);
       }
-      
+
       .demo-link:hover {
         background: var(--secondary-color);
       }
-      
+
       .contact-section {
         background: radial-gradient(
           circle at 10% 20%,
@@ -448,7 +448,7 @@
         margin: 0 auto 50px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
-      
+
       .contact-section h2 {
         text-align: center;
         color: var(--primary-color);
@@ -456,7 +456,7 @@
         margin-bottom: 20px;
         position: relative;
       }
-      
+
       .contact-section h2::after {
         content: "";
         display: block;
@@ -466,21 +466,21 @@
         margin: 15px auto;
         border-radius: 2px;
       }
-      
+
       .contact-form {
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
       }
-      
+
       .form-group {
         margin-bottom: 15px;
       }
-      
+
       .form-group.full-width {
         grid-column: span 1;
       }
-      
+
       .form-group label {
         display: block;
         margin-bottom: 8px;
@@ -488,7 +488,7 @@
         font-size: clamp(16px, 2.5vw, 18px);
         font-weight: 500;
       }
-      
+
       .form-group input,
       .form-group textarea {
         width: 100%;
@@ -499,25 +499,29 @@
         transition: all 0.3s;
         background-color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .form-group input:focus,
       .form-group textarea:focus {
         outline: none;
         border-color: var(--secondary-color);
         box-shadow: 0 0 0 3px rgba(102, 67, 181, 0.2);
       }
-      
+
       .form-group textarea {
         min-height: 120px;
         resize: vertical;
       }
-      
+
       .submit-btn {
         grid-column: span 1;
         justify-self: center;
         padding: 12px 30px;
         font-size: clamp(14px, 2.5vw, 18px);
-        background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        background: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--secondary-color)
+        );
         color: var(--white);
         border: none;
         border-radius: 10px;
@@ -527,42 +531,46 @@
         letter-spacing: 1px;
         font-weight: 600;
       }
-      
+
       .submit-btn:hover {
-        background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+        background: linear-gradient(
+          to right,
+          var(--secondary-color),
+          var(--primary-color)
+        );
         transform: translateY(-3px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       }
-      
+
       .contact-info {
         margin-top: 30px;
         text-align: center;
       }
-      
+
       .contact-info p {
         font-size: clamp(14px, 2.5vw, 18px);
         color: var(--primary-color);
         margin-bottom: 10px;
       }
-      
+
       .social-links {
         display: flex;
         justify-content: center;
         gap: 15px;
         margin-top: 15px;
       }
-      
+
       .social-links a {
         color: var(--primary-color);
         font-size: clamp(18px, 4vw, 24px);
         transition: all 0.3s;
       }
-      
+
       .social-links a:hover {
         color: var(--secondary-color);
         transform: translateY(-3px);
       }
-      
+
       footer {
         background-color: var(--primary-color);
         color: var(--white);
@@ -570,7 +578,7 @@
         padding: 15px;
         font-size: clamp(14px, 2.5vw, 18px);
       }
-      
+
       /* Mobile Menu */
       .menu-toggle {
         display: none;
@@ -581,7 +589,7 @@
         cursor: pointer;
         padding: 10px;
       }
-      
+
       /* Responsive adjustments */
       @media (min-width: 600px) {
         .intro-grid {
@@ -589,34 +597,35 @@
           flex-wrap: wrap;
           justify-content: center;
         }
-        
+
         .introduction {
           margin: 10px 20px;
         }
-        
-        #middle, #last {
+
+        #middle,
+        #last {
           margin-left: 0;
           margin-top: 0;
         }
-        
+
         .about-content {
           flex-direction: row;
         }
-        
+
         .about-card {
           flex: 1;
           min-width: 280px;
         }
-        
+
         .contact-form {
           grid-template-columns: 1fr 1fr;
         }
-        
+
         .form-group.full-width {
           grid-column: span 2;
         }
       }
-      
+
       @media (min-width: 768px) {
         section {
           flex-direction: row;
@@ -624,21 +633,21 @@
           justify-content: space-between;
           padding: 40px;
         }
-        
+
         #profile-image {
           margin-right: 40px;
         }
-        
+
         .quote {
           text-align: left;
           margin-left: 0;
         }
-        
+
         .img-grid {
           grid-template-columns: repeat(4, 1fr);
         }
       }
-      
+
       @media (max-width: 768px) {
         nav {
           position: fixed;
@@ -649,52 +658,52 @@
           flex-direction: column;
           align-items: center;
           padding: 20px 0;
-          box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           transform: translateY(-150%);
           transition: transform 0.3s ease;
           z-index: 999;
         }
-        
+
         nav.active {
           transform: translateY(0);
         }
-        
+
         nav a {
           padding: 10px 0;
           width: 100%;
           text-align: center;
         }
-        
+
         .menu-toggle {
           display: block;
         }
-        
+
         button {
           margin: 10px 0 0 0;
         }
       }
-      
+
       @media (max-width: 480px) {
         header {
           flex-direction: column;
           align-items: flex-start;
           padding: 10px;
         }
-        
+
         nav {
           top: 70px;
         }
-        
+
         h1 {
           padding: 5px 0;
         }
-        
+
         .introduction {
           width: 100px;
           height: 100px;
           font-size: 16px;
         }
-        
+
         .project-tech {
           justify-content: center;
         }
@@ -730,8 +739,8 @@
       <div class="part-one">
         <h2>Who am I?</h2>
         <p>
-          Hi! I'm Tsion Taye, a third-year Software Engineering student at
-          Bahir Dar University. I am skilled in HTML, CSS, and JavaScript, and I
+          Hi! I'm Tsion Taye, a third-year Software Engineering student at Bahir
+          Dar University. I am skilled in HTML, CSS, and JavaScript, and I
           absolutely love programming. I enjoy being immersed in coding and the
           world of technology.
         </p>
@@ -920,7 +929,7 @@
         <p>
           Email: <a href="mailto:tsiont507@gmail.com">tsiont507@gmail.com</a>
         </p>
-        <p>Phone: +251 123 456 789</p>
+        <p>Phone: +251 930 799 883</p>
 
         <div class="social-links">
           <a href="https://github.com/tsion1216" target="_blank" title="GitHub"
@@ -945,20 +954,20 @@
     />
     <script>
       // Mobile menu toggle
-      const menuToggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('nav');
-      
-      menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav");
+
+      menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
       });
-      
+
       // Close menu when clicking on a link
-      document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', () => {
-          nav.classList.remove('active');
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("active");
         });
       });
-      
+
       // Scroll to top on page load/refresh
       window.onload = function () {
         setTimeout(function () {
@@ -968,7 +977,7 @@
           });
         }, 0);
       };
-      
+
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -1091,7 +1100,7 @@
       window.addEventListener("scroll", animateOnScroll);
       // Trigger once on load in case elements are already in view
       animateOnScroll();
-      
+
       // Hire Me button scroll to contact
       document.querySelector("button").addEventListener("click", () => {
         document
