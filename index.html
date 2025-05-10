@@ -33,7 +33,7 @@
         text-decoration: none;
         font-size: 25px;
         padding: 10px;
-        color: #c4bbf0;
+        color: #6643b5;
         transition: all ease-in-out 150ms;
       }
       nav a:hover {
@@ -362,7 +362,11 @@
         background: #6643b5;
       }
       .contact-section {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(226, 240, 254) 0%,
+          rgb(255, 247, 228) 90%
+        );
         padding: 60px 20px;
         border-radius: 20px;
         max-width: 800px;
@@ -704,12 +708,15 @@
         <p>Phone: +251 123 456 789</p>
 
         <div class="social-links">
-          <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/tsion1216" title="GitHub"
             ><i class="fab fa-github"></i
           ></a>
-          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:tsiont507@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://t.me/Tamth12" target="_blank" title="Telegram">
+            <i class="fab fa-telegram"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -722,6 +729,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <script>
+      // Scroll to top on page load/refresh
+      window.onload = function () {
+        setTimeout(function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Optional: adds smooth scrolling
+          });
+        }, 0);
+      };
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -852,6 +868,11 @@
       window.addEventListener("scroll", animateOnScroll);
       // Trigger once on load in case elements are already in view
       animateOnScroll();
+      document.querySelector("button").addEventListener("click", () => {
+        document
+          .querySelector("#contact")
+          .scrollIntoView({ behavior: "smooth" });
+      });
     </script>
   </body>
 </html>
